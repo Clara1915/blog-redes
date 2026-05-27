@@ -6,15 +6,15 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #0e0f0f;
+  background: #0e0e0e;
   color: #ffffff;
   min-height: 100vh;
 }
 
 :root {
-  --color-bg: #2f5c5c;
+  --color-bg: #0e0e0e;
   --color-surface: rgba(26, 25, 25, 0.80);
-  --color-primary: #6fabfa;
+  --color-primary: #a3a6ff;
   --color-text: #ffffff;
   --color-text-muted: #adaaaa;
 
@@ -87,3 +87,49 @@ body {
   cursor: pointer;
 }
 
+.btn-hamburguer {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+/*media query aplicada a dispositivos moveis */
+@media (max-width: 600px) {
+
+  .site-header {
+    height: auto;
+  }
+
+  .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .btn-hamburguer {
+    position: relative;
+    right: 1rem;
+    top: 1rem;
+    display: block;
+  }
+
+  .nav-links, .nav-actions {
+    display: none;
+
+  }
+
+  .open.nav-inner .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  
+  .open.nav-inner .nav-actions {
+    display: block;
+  }
+
+}

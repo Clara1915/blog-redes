@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlogTech — Navbar</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -11,9 +12,9 @@
 </head>
 
 <body>
-
 <header class="site-header">
   <nav class="nav-inner">
+
 
     <!-- Logo -->
     <a href="#" class="nav-logo">BlogTech</a>
@@ -33,8 +34,24 @@
       </button>
     </div>
 
+    <button class="btn-hamburguer">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+
+
   </nav>
 </header>
+
+<script>
+  let menu = document.querySelector(".btn-hamburguer");
+  let nav = document.querySelector(".nav-inner");
+
+  menu.addEventListener("click", () => {
+    nav.classList.toggle ("open");
+  });
+</script>
+</script>
 
 </body>
 </html>
