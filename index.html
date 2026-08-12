@@ -4,28 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlogTech — Navbar</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 <header class="site-header">
   <nav class="nav-inner">
-
-
     <!-- Logo -->
     <a href="#" class="nav-logo">BlogTech</a>
-
     <!-- Links -->
     <ul class="nav-links">
       <li><a href="#">Início</a></li>
       <li><a href="#">Artigos</a></li>
       <li><a href="#">Sobre</a></li>
     </ul>
-
     <!-- Ações -->
     <div class="nav-actions">
       <a href="#" class="btn-entrar">Entrar</a>
@@ -33,24 +26,18 @@
         <span class="material-symbols-outlined">search</span>
       </button>
     </div>
-
     <button class="btn-hamburguer">
       <span class="material-symbols-outlined">menu</span>
     </button>
-
-
-
   </nav>
   <link rel="stylesheet" href="./css/style.css" />
 <link rel="stylesheet" href="./css/hero.css" />
 <link rel="stylesheet" href="./css/footer.css" />
 <link rel="stylesheet" href="./css/main.css" />
 </header>
-
 <script>
   let menu = document.querySelector(".btn-hamburguer");
   let nav = document.querySelector(".nav-inner");
-
   menu.addEventListener("click", () => {
     nav.classList.toggle ("open");
   });
@@ -59,16 +46,13 @@
 <main>
   <section class="hero-section" id="inicio">
     <div class="hero-container">
-      <div class="hero-titulo-wrapper">
-        <h1 class="hero-titulo">Bem-vindo ao Nosso Blog</h1>
+      <div class="hero-titulo-wrapper"><h1 class="hero-titulo">Bem-vindo ao Nosso Blog</h1>
       </div>
-
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-valor">500 Comentários</span>
           <span class="stat-descricao">Interação ativa</span>
         </div>
-
         <div class="stat-item">
           <span class="stat-valor">10k Visualizações</span>
           <span class="stat-descricao">Alcance global</span>
@@ -76,47 +60,114 @@
       </div>
     </div>
   </section>
-
   <!-- Seção de conteúdo principal: grade de artigos e barra lateral (Prática 03) -->
    <section class="main-section">
-    <div class="content-conteiner">
+    <div class="content-container">
       <!--grade de artigos-->
       <div class="posts-container">
-
         <article class="post-card">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwGbzjHot7q2lQalz_019jJtaDIujtlL5SsCfEUenVww&s=10" 
           alt="Singapura"/>
-
           <div class="post-content">
             <span class="post-date">08/03/2090</span>
             <h2>Singapura</h2>
             <p>A cidade do futuro</p>
             <a href="">Leia mais</a>
-
           </div>
-
         </article>
-
+        <article class="post-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOeqpHqLqQH82K1QRYl3f8nxQTGWqskavKydibAiAP55w6nwgE_CA0uH0d&s=10" 
+          alt="Vienna"/>
+          <div class="post-content">
+            <span class="post-date">06/12/2040</span>
+            <h2>Vienna</h2>
+            <p>A cidade afundada</p>
+            <a href="">Leia mais</a>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://cdn.britannica.com/35/100235-050-CE3936EE/view-CN-Tower-Toronto-skyline-observation-deck.jpg" 
+          alt="Toronto"/>
+          <div class="post-content">
+            <span class="post-date">23/10/2026</span>
+            <h2>Toronto</h2>
+            <p>A cidade dos ricos</p>
+            <a href="">Leia mais</a>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_aqKgs8yItzTAgT7M-nK4M0I_g-MOoxopFbcFAVqbnQ&s=10" 
+          alt="Fortaleza"/>
+          <div class="post-content">
+            <span class="post-date">23/10/2026</span>
+            <h2>Fortaleza</h2>
+            <p>A cidade da beira mar</p>
+            <a href="">Leia mais</a>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_aqKgs8yItzTAgT7M-nK4M0I_g-MOoxopFbcFAVqbnQ&s=10" 
+          alt="Fortaleza"/>
+          <div class="post-content">
+            <span class="post-date">23/10/2026</span>
+            <h2>Fortaleza</h2>
+            <p>A cidade da beira mar</p>
+            <a href="">Leia mais</a>
+          </div>
+        </article>
+        
       </div>
-
       <!--barra lateral-->
+      <aside class="side-bar">
+            <div class="form-container">
+              <h3>Fique por dentro</h3>
+              <p>
+                Receba curadorias exclusivas sobre design e tecnologia
+                diretamente no seu e-mail
+              </p>
+              <input type="email" name="email" id="email" />
+              <button class="btn-email">Inscrever-se</button>
+            </div>
+            <div class="categories-container">
+              <h3>Categorias</h3>
+              <ul>
+                <li>
+                  <span class="title-category">Design</span>
+                  <span class="badge-category">24</span>
+                </li>
+                <li>
+                  <span class="title-category">Tecnologia</span>
+                  <span class="badge-category">18</span>
+                </li>
+                <li>
+                  <span class="title-category">Carreira</span>
+                  <span class="badge-category">12</span>
+                </li>
+              </ul>
+            </div>
+            <div class="editor-container">
+              <img src="" alt="Foto do editor chefe" />
+              <h4>Gabriel Lima</h4>
+              <span>Editor Chefe</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                quo, laboriosam eveniet impedit amet, a nesciunt explicabo.
+              </p>
+            </div>
+          </aside>
     </div>
-
    </section>
 </main>
 <footer class="site-footer">
   <div class="footer-container">
     <a href="./index.html" class="footer-brand"> BlogTech </a>
-
     <nav class="footer-nav">
       <a href="#">Privacidade</a>
       <a href="#">Termos</a>
       <a href="#">Contato</a>
     </nav>
-
     <p class="footer-copy">© 2026 BlogTech. Todos os direitos reservados.</p>
   </div>
 </footer>
-
 </body>
 </html>
